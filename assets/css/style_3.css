@@ -1,0 +1,276 @@
+header {
+	border-style: solid;
+	border-width: 1px;
+	color: rgb(253,206,5);
+	margin: 0 auto;
+	padding: 10px;
+	max-width: 1208px;
+	/*
+	min-width: 550px;*/
+	font-family: Rockwell, Enriqueta, sans-serif;
+	position: static;
+}
+
+.imagem {
+	width: 75px;
+	position: relative;
+	align-self: flex-start;
+	display: inline-flex;
+}
+
+.parent {
+	background-color: rgb(253,206,5);
+	margin: 1rem;
+	padding: 1rem;
+	max-width: 1208px;
+	/*
+	min-width: 550px;*/
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-content: center;
+}
+
+.child_1, .child_2, .child_3, .child_4 {
+	display: inline;
+	position: relative;
+	flex-grow: 1;
+	justify-content: center;
+	align-content: center;
+	font-family: "Roboto Condensed", "Helvetica", sans-serif; 
+	font-size: 1.0rem;
+	margin: 1rem;
+	padding: 1rem;
+	width: 10rem;
+	color: blue;
+	text-decoration: underline;
+	cursor: pointer;
+} 
+
+.main {
+	display:flex ;
+	flex-direction: column;
+	flex-direction: row;
+	justify-content: flex-start;
+
+}
+
+.lateral {
+	border-style: solid;
+	font-family: "Roboto Condensed", "Helvetica", sans-serif; 
+	color: rgb(136, 21, 29);
+	border-width: 0.0625rem;
+	margin: 0.625rem;
+	padding: 0.3125rem;
+	position: relative;
+	border-radius: 0.625rem;
+	width: 7.8125rem;
+	display: grid;
+	justify-content: flex-start;
+	align-self: center;
+	grid-gap: 1.5rem;
+	grid-template-columns: 6.5rem;
+	padding: 1rem;
+	background-color: white;
+	
+
+}
+
+
+
+
+
+
+.sub {
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .5s, visibility .5s;
+	left: 0;
+}
+
+.sub-item {
+	color: rgb(0,0,0);
+}
+
+.child_1:hover .sub {
+    opacity: 1;
+    visibility: visible;
+}
+
+.child_2:hover .sub {
+	opacity: 1;
+	visibility: visible;
+}
+
+.child_3:hover .sub {
+	opacity: 1;
+	visibility: visible;
+}
+
+.child_4:hover .sub {
+	opacity: 1;
+	visibility: visible;
+}
+
+.sub-item:hover {
+	border-style: solid;
+	border-width: 0.550px;
+	border-color: rgb(0,0,0);
+    background-color: rgb(253,206,5);
+}
+
+
+
+
+
+
+.title {	
+	margin: 1.5rem 20rem ; 
+	font-size: large;
+	font-weight: bold;
+	font-family: "Roboto Condensed", "Helvetica", sans-serif; 
+
+}
+
+.name {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.goal {
+  list-style-type: disc;
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+}
+
+
+
+
+
+
+
+@media (max-width: 375px) {
+	.imagem {
+		width: 40px;
+		position: relative;
+		align-self: flex-start;
+		display: inline-flex;
+	}
+
+	.header {
+		border-style: solid;
+		border-width: 0px;
+		color: rgb(253,206,5);
+		margin: 0 auto;
+		padding: 1px;
+		max-width: 1208px;
+		/*
+		min-width: 550px;*/
+		font-family: Rockwell, Enriqueta, sans-serif;
+		position: static;
+
+
+	}
+
+
+	.parent {
+		background-color: rgb(253,206,5);
+		margin: 0.7rem;
+		padding: 0.7rem;
+		max-width: 1208px;
+		/*
+		min-width: 550px;*/
+		display: flex;
+		position: relative;
+		justify-content: center;
+		align-content: center;
+	        
+		}
+
+	.child_1, .child_2, .child_3, .child_4 {
+		display: block;
+		font-family: "Roboto Condensed", "Helvetica", sans-serif; 
+		font-size: 0.7rem;
+		
+		margin: 5%;
+		padding: 10%;
+		width: 20%;
+		background-color: rgb(253,206,5);
+
+	} 
+
+	.ul{
+		position: fixed;
+		top: 0;
+        left: -90%;
+        transition: left .5s;
+	}
+
+	.imagem:hover + .ul {
+		left:0;
+    }
+	
+.sub {
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .5s, visibility .5s;
+	left: 0;
+}
+
+.sub-item {
+	color: rgb(0,0,0);
+}
+
+.child_1:hover .sub {
+    opacity: 1;
+    visibility: visible;
+}
+
+.child_2:hover .sub {
+	opacity: 1;
+	visibility: visible;
+}
+
+.child_3:hover .sub {
+	opacity: 1;
+	visibility: visible;
+}
+
+.child_4:hover .sub {
+	opacity: 1;
+	visibility: visible;
+}
+
+.sub-item:hover {
+	border-style: solid;
+	border-width: 0.550px;
+	border-color: rgb(0,0,0);
+    background-color: rgb(253,206,5);
+}
+
+
+	.lateral {
+		display: inline;
+		border-style: solid;
+		font-family: "Roboto Condensed", "Helvetica", sans-serif; 
+		color: rgb(136, 21, 29);
+		border-width: 0.0625rem;
+		margin: 0.625rem;
+		padding: 0.3125rem;
+		position: relative;
+		border-radius: 0.625rem;
+		width: 7.8125rem;
+		
+		position: relative;
+		justify-content: flex-start;
+		align-self: center;
+		grid-gap: 1.5rem;
+		grid-template-columns: 6.5rem;
+		padding: 1rem;
+		background-color: white;
+		left: -100%;
+ }
+}
+       
