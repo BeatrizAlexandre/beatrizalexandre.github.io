@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+	<head>
+		<title>Projetos</title>
+		<link href="assets/css/reset.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+		<link href="assets/css/style_3.css" rel="stylesheet">
+		<script src="lib/app.js"></script>
+    	<script src="lib/database.js"></script>
+    	<script src="lib/codes.js"></script>
+   	 	<script src="lib/handlebars.js"></script>
+		<script src="script_t1.js"></script>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<header class = "header">
+			<div class = 'parent'>
+				<img class = "imagem" src = "assets/img/raposaa.png" alt = 'Imagem_Raposa'>
+				<ul class="ul">	
+
+					<li class = "child_1">  <a href='pag_2.html?topico=topico1'>
+						Aplicando Conhecimentos na Sociedade
+						</a>
+
+
+						<ul class = "sub">
+							<li class = "sub-item"> <a href='pag_3.html?topico=topico1&courses=empresa'>
+								Inovação Incremental para Empresa Existente
+							</a></li>
+							<li class = "sub-item"> <a href='pag_3.html?topico=topico1&courses=gde'>
+								Case de Grandes Desafios da Engenharia
+							</a></li>
+							<li class = "sub-item"> <a href='pag_3.html?topico=topico1&courses=startup'>
+								Modelo de Negócio para Start-up Nova
+							</a></li>
+						</ul>
+					</li>
+
+					<li class = "child_2"> <a href='pag_2.html?topico=topico2'> 
+						Construções
+						</a>
+
+						<ul class = "sub">
+							<li class = "sub-item"> <a href='pag_3.html?topico=topico2&courses=aciona'>
+								Projeto Final de Acionamentos Elétricos
+							</a></li>
+							<li class = "sub-item"> <a href='pag_3.html?topico=topico2&courses=carroça'>
+								Melhoria para Carroças dos Catadores
+							</a></li>
+							<li class = "sub-item"> <a href='pag_3.html?topico=topico2&courses=girafa'>
+								Girafa do Job-Rotation
+							</a></li>
+							<li class = "sub-item"> <a href='pag_3.html?topico=topico2&courses=instrumed'>
+								Estação Meteorológica
+							</a></li>
+							<li class = "sub-item"> <a href='pag_3.html?topico=topico2&courses=modcontrole'>
+								Projeto Final de Modelagem e Controle
+							</a></li>
+						</ul>
+					</li>
+
+					<li class = "child_3"> <a href='pag_2.html?topico=topico3'> 
+						Estudos Exatos
+						</a>
+
+						<ul class = "sub">
+							<li class = "sub-item"> <a href='pag_3.html?topico=topico3&courses=modsim'>
+								Projeto Final de Modelagem e Simulação do Mundo Físico
+							</a></li>
+							<li class = "sub-item"> <a href='pag_3.html?topico=topico3&courses=matmult'>
+								Projeto Final de Matemática Multivariada
+							</a></li>
+							<li class = "sub-item"> a<a href='pag_3.html?topico=topico3&courses=materiais'>
+								Projeto Final de Desconstruindo a Matéri
+							</a></li>
+							<li class = "sub-item"> <a href='pag_3.html?topico=topico3&courses=matvar'>
+								Projeto Final de Matemática da Variação
+							</a></li>
+						</ul>
+					</li>
+
+					<li class = "child_4"> <a href='pag_2.html?topico=topico4'> 
+						Programação
+						</a>
+
+						<ul class = "sub">
+							<li class = "sub-item"> <a href='pag_3.html?topico=topico4&courses=cd'>
+								Projeto Final de Ciência dos Dados
+							</a></li>
+							<li class = "sub-item"> <a href='pag_3.html?topico=topico4&courses=codesign'>
+								Projeto Final de Co-Design de Aplicativos
+							</a></li>
+							<li class = "sub-item"> <a href='pag_3.html?topico=topico4&courses=desoft'> 
+								Projeto Final de Design de Software
+							</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</header>
+	
+	<main class="main">
+
+		<!--<section class = "lateral">
+			{{#each courses as |course key|}}
+			<div class = "l1"><a href='pag_3.html?topico={{course.topico}}&courses={{course.curso}}'>
+				{{course.nome}}
+				
+			</a></div>
+			{{/each}}
+		
+		</section>-->
+		<section class = "text">
+			<h1 class= 'name'>
+				{{nome}}
+			</h1>
+        		
+        	<div><ul>
+        			<li class= 'goal'> {{curs}}</li>
+        	</ul></div>
+
+
+
+	</main>
+	</body>
+</html>
