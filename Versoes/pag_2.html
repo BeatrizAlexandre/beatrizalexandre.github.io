@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+	<head>
+		<title>Projetos</title>
+		<link href="assets/css/reset.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+		<link href="assets/css/style_2.css" rel="stylesheet">
+		<script src="lib/app.js"></script>
+    	<script src="lib/database.js"></script>
+    	<script src="lib/codes.js"></script>
+   	 	<script src="lib/handlebars.js"></script>
+		<script src="script_t1.js"></script>
+
+
+
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+	</head>
+	<body>
+		<header class = "header">
+			<div class = 'parent'>
+				<img class = "imagem" src = "assets/img/raposaa.png" alt = 'Imagem_Raposa'>
+
+
+				<ul>
+					<li class = "child_1"> <a href="pag_2.html?topico=topico1"> Aplicando Conhecimentos na Sociedade </a></li>
+					<li class = "child_2"> <a href="pag_2.html?topico=topico2"> Construções </a></li>
+					<li class = "child_3"> <a href="pag_2.html?topico=topico3"> Estudos Exatos </a></li>
+					<li class = "child_4"> <a href="pag_2.html?topico=topico4"> Programação </a></li>
+
+				</ul>
+			</div>
+		</header>
+	
+	<main>
+		<div class = "box">
+			{{#each courses as |course key|}}
+				<div class = "subbox"> <a href='test.html?topico={{course.topico}}&courses={{course.curso}}'>
+					{{course.nome}}
+				</a></div>
+			{{/each}}
+
+		</div>
+	</main>	
+	</body>
