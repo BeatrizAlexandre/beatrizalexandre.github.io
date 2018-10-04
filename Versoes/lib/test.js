@@ -4,14 +4,14 @@ document.addEventListener('DOMContentLoaded', function() {
         banco de dados cujo endereço é passado como parâmetro.
         Altere o endereço abaixo para seu próprio banco de dados.
     */
-    let ab = start('https://teste-ab-9f84c.firebaseio.com/')
+    let ab = start('https://teste-a-e-b.firebaseio.com/')
 
     /*
         Seleciona o elemento que, quando clicado, finaliza a
         medição de tempo e envia o resultado para o banco.
         Altere o seletor abaixo para o do elemento desejado.
     */
-    let element = document.querySelector('.continue')
+    let element = document.querySelector('.ul')
 
     /*
         A princípio, o restante do código não precisa mudar.
