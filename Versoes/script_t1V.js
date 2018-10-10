@@ -8,12 +8,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	let url2 = '/' + params['topico'] + '/courses/' + params['courses']
 	console.log(url2)
+	console.log(url)
 
 	db.download(url2,function(data){
 
 		   replace('body', {
 		   	'nome': data['nome'],
     		'curs': data['goals'],
+
 		})
 		
 	})

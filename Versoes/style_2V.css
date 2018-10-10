@@ -1,0 +1,304 @@
+header {
+	border-style: solid;
+	font-family: Rockwell, Enriqueta, sans-serif;
+	border-width: 0.25rem;
+	color: rgb(253,206,5);
+	margin: 1rem;
+	padding: 1rem;
+	position: static;
+}
+
+.imagem {
+	display: flex;
+	width: 90px;
+	position: relative;
+	align-self: flex-start;
+	
+}
+
+.parent {
+	background-color: rgb(253,206,5);
+	margin: 1rem;
+	padding: 1rem;
+	display: flex;
+	list-style: none;
+
+	position: relative;
+	justify-content: center;
+	align-content: center;
+}
+
+.child_1, .child_2, .child_3, .child_4 {
+	justify-content: space-around;
+	display: inline-flex;
+	color: black;
+
+	font-family: Roboto Condensed, Helvetica, sans-serif; 
+	
+	font-size: 1.0rem;
+	margin: 1rem;
+	padding: 1rem;
+	width: 10rem;
+} 
+
+
+.sub{
+	color: black;
+}
+
+.box {
+	display: flex;
+	position: relative;
+	justify-content: space-around;
+	align-self: flex-start;
+	grid-gap: 2rem;
+	grid-template-rows: 5rem 5rem 5rem;
+	grid-template-columns: 25%;
+	padding: 1rem;
+	margin: 1rem;
+}
+
+.subbox {
+	border-style: solid;
+	font-family: Roboto Condensed, Helvetica, sans-serif;
+	background-color: rgb(236, 62, 66); 
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: rgb(0,0,0);
+	text-align: center;
+	margin: 1rem;
+	padding: 1rem;
+	width: 25rem;
+	height: 10rem;	
+}
+
+.topperson{
+	border-style: solid;
+}
+
+.box1, .box2, .box3, .box4 {
+	
+	border-style: solid;
+	font-family: Roboto Condensed, Helvetica, sans-serif;
+
+	background-color:(236, 62, 66);
+	font-size: 1.5rem;
+
+	background-color: rgb(236, 62, 66); 
+
+	font-size: 0.5rem;
+
+	font-size: 2.5rem;
+
+	font-weight: bold;
+	color: rgb(0,0,0);
+	text-align: center;
+	margin: 1rem;
+	padding: 1rem;
+	width: 25rem;
+	height: 10rem;
+}
+
+/*.box1 {
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+.box2 {
+	
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 3;
+	grid-column-end: 4;
+}
+
+.box3 {
+	
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+.box4 {
+
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 3;
+	grid-column-end: 4;
+}
+
+*/
+
+
+
+.sub {
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .5s, visibility .5s;
+	left: 2;
+}
+
+.sub-item {
+	color: rgb(0,0,0);
+}
+
+.child_1:hover .sub {
+    opacity: 1;
+    visibility: visible;
+}
+
+.child_2:hover .sub {
+	opacity: 1;
+	visibility: visible;
+}
+
+.child_3:hover .sub {
+	opacity: 1;
+	visibility: visible;
+}
+
+.child_4:hover .sub {
+	opacity: 1;
+	visibility: visible;
+}
+
+.sub-item:hover {
+	border-style: solid;
+	border-width: 0.550px;
+	border-color: rgb(0,0,0);
+    background-color: rgb(253,206,5);
+}
+
+
+
+@media (max-width: 375px) {
+
+.imagem {
+	display: flex;
+	width: 40px;
+	position: relative;
+	align-self: flex-start;
+	
+}
+
+.header {
+	border-style: solid;
+	font-family: Rockwell, Enriqueta, sans-serif;
+	border-width:0px;
+	color: rgb(253,206,5);
+	margin: 0 auto;
+	padding: 1px;
+	position: static;
+}
+
+.parent {
+	background-color:rgb(253,206,5);
+	margin: 0.7rem;
+	padding: 1rem;
+	display: flex;
+	/*list-style: none;*/
+
+	position: relative;
+	justify-content: center;
+	align-content: center;
+
+}
+
+.subbox {
+	border-style: solid;
+	font-family: Roboto Condensed, Helvetica, sans-serif;
+	background-color: rgb(236, 62, 66); 
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: rgb(0,0,0);
+	text-align: center;
+	margin-left: 5rem;
+	padding: 1px;
+	width: 10rem;
+	height: 10rem;
+
+}
+
+.child_1, .child_2, .child_3, .child_4 {
+	display: block;
+	font-family: "Roboto Condensed", "Helvetica", sans-serif; 
+	font-size: 0.7rem;
+	margin: 5%;
+	padding: 10%;
+	width: 20%;
+	background-color: rgb(253,206,5);
+
+}
+.ul{
+	position: fixed;
+	top: 0;
+	left: -90%;
+	transition: left .5s
+}
+
+
+.imagem:hover + .ul {
+		left:0;
+    }
+
+ .sub {
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .5s, visibility .5s;
+	left: 0;
+}
+
+.sub-item {
+	color: rgb(0,0,0);
+}
+
+.ul:hover .sub {
+    opacity: 1;
+    visibility: visible;
+}
+
+.ul:hover .sub {
+	opacity: 1;
+	visibility: visible;
+}
+
+.ul:hover .sub {
+	opacity: 1;
+	visibility: visible;
+}
+
+.ul:hover .sub {
+	opacity: 1;
+	visibility: visible;
+}
+
+.sub-item:hover {
+	border-style: solid;
+	border-width: 0.550px;
+	border-color: rgb(0,0,0);
+    background-color: rgb(253,206,5);
+}
+
+
+
+.box{
+
+	display: inline;
+	position: relative;
+	justify-content: space-around;
+	align-self: flex-start;
+	grid-gap: 1rem;
+	grid-template-rows: 1rem;
+/*	grid-template-columns: 25%;*/
+	padding: 1rem;
+	margin: 1rem;
+
+}
+
+
+	}

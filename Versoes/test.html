@@ -4,20 +4,22 @@
     <head>
         <title>APS 4: Teste A/B</title>
         <meta charset="utf-8">
-        <script>
+        <script src="script_t1V.js"></script>
+        
+            <script>
             if(Math.random() < 0.5) {
                 /*
                     Substitua "a.html" pela referência
                     correspondente à Versão A do teste.
                 */
-                window.location.replace('pag_3V1.html')
+                window.location.replace('pag_3V1.html?topico=topico4&courses=codesign')
             }
             else {
                 /*
                     Substitua "b.html" pela referência
                     correspondente à Versão B do teste.
                 */
-                window.location.replace('pag_3V2.html')
+                window.location.replace('pag_3V2.html?topico=topico4&courses=codesign')
             }
         </script>
     </head>
