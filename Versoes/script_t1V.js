@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function() {
 
 	let db = connect('https://aula-10-a1ec0.firebaseio.com/')
 
@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
 	let url = '/' + params['topico'] + '/courses'
 
 	let url2 = '/' + params['topico'] + '/courses/' + params['courses']
-	console.log(url2)
-	console.log(url)
+	//console.log(url2)
+	//console.log(url)
 
 	db.download(url2,function(data){
 
